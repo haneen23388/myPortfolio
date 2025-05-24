@@ -1,5 +1,5 @@
 import styles from "./SingleNavigator.module.css";
-import arrowImage from "../images/arrow.svg";
+import arrowImage from "../images/arrow-up-alt-svgrepo-com.svg";
 interface Props {
   handleClick: () => void;
   direction?: "up" | "left" | "right";
