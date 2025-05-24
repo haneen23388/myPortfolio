@@ -1,0 +1,16 @@
+.background{
+    background: var(--color-portfolio-blue-3);
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.bigTitle{
+    color: #fff;
+}
+@media screen and (min-width:1024px) {
+    .background{
+        height: 500px;
+    }
+}

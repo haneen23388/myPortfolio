@@ -1,0 +1,116 @@
+.wrapper {
+    background-color:var(--color-portfolio-blue-4);
+    height: calc(100vh - var(--navbar-height));
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 20px;
+    /* padding-top: calc(1.2 * var(--navbar-height)); */
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+  }
+  
+  .menuItemsContainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: 16px;
+  }
+  
+  .menuItemWrapper{
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+  }
+  
+  .menuItemWrapper:hover .menuItem:not(.active){
+      /* transform:rotate(8deg) translateY(-130%) ; */
+  }
+  
+  [dir="rtl"] .menuItemWrapper:hover .menuItem:not(.active){
+      /* transform:rotate(-8deg) translateY(-130%) ; */
+  }
+  
+  .download{
+    object-fit: contain;
+    width: 38px;
+  }
+  
+  .menuItem {
+    color: white;
+    transition: all 0.6s;
+    transform: rotate(0) translateY(0);
+    transform-origin: center;
+    width: fit-content;
+    display: flex;
+    gap: 6px;
+  }
+  
+  .menuItem.active{
+    font-weight: 700;
+  }
+  
+  .menuItemWrapper:hover .menuItemHidden:not(.active){
+      top: 100%;
+      transform:  translate3d(0,0,0) translateY(-100%) rotate(0deg) ;
+  }
+  .menuItemHidden{
+      position: absolute;
+      top: 150%;
+      display: inline-block;    
+      transition: all 0.6s;
+      transform: translate3d(0,0,0) rotate(10deg) ;
+      transform-origin: center;
+      display: flex;
+      gap: 6px;
+  }
+  
+  .backgroundSpiral{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      /* z-index: -1; */
+  }
+  
+  [dir="rtl"] .menuItemHidden{
+      transform: translate3d(0,0,0) rotate(-10deg) ;
+  }
+  
+  .bottomLanguageSocialContainer{
+    position: relative;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    .menuItemsContainer {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 40px;
+    }
+  
+    .evenOrder{
+      order: 1;
+    }
+  
+    .wrapper{
+      padding-top: 5%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .wrapper {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  
+    .bottomLanguageSocialContainer{
+      display: none;
+    }
+  }
+  

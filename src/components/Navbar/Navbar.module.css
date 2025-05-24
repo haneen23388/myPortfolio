@@ -1,0 +1,29 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border: 1px solid var(--color-portfolio-blue-3);
+}
+.languageToggler {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+.img{
+    object-fit: contain;
+    height: 70px;
+    cursor: pointer;
+}
+@media screen and (min-width:1024px) {
+    .wrapper{
+        /* flex-direction: row; */
+        
+    }
+}

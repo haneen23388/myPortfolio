@@ -1,0 +1,31 @@
+.wrapper {
+  position: fixed;
+  bottom: 8%;
+  right: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+
+  animation: fade-in-20px 1s ease-in-out forwards;
+}
+
+.middle {
+  position: relative;
+  bottom: 30px;
+}
+
+[dir="rtl"] .wrapper {
+  right: initial;
+  left: 20px;
+}
+
+@keyframes fade-in-20px {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

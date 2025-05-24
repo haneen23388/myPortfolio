@@ -1,0 +1,42 @@
+.imagPargraph{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+.img{
+    object-fit: contain;
+    width: 100%;
+}
+.pargraphButton{
+    text-align: center;
+}
+.button{
+    border: 1px solid;
+    padding: 15px;
+    background: var(--color-portfolio-blue-4);
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none
+
+}
+.title{
+    text-align: center;
+}
+.myProject{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+@media screen and (min-width:1024px) {
+    .imagPargraph{
+        flex-direction: row;
+    }
+    .myProject{
+        flex-direction: row;
+    }
+    .img{
+        width: 50%;
+    }
+}

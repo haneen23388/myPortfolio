@@ -1,0 +1,62 @@
+.navigator {
+  --translation-value: 24px;
+  border-radius: 100%;
+  border: 1px solid var(--color-mepco-dark-accent-3);
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.arrow {
+  object-fit: contain;
+  width: 18px;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+
+.left .arrow {
+  transform: rotate(-90deg);
+}
+[dir="rtl"] .left .arrow {
+  transform: rotate(90deg);
+}
+
+.right .arrow {
+  transform: rotate(90deg);
+}
+
+[dir="rtl"] .right .arrow {
+  transform: rotate(-90deg);
+}
+
+@media (hover: hover) {
+  .navigator:hover {
+    transform: scale(1.4);
+  }
+
+  .navigator:hover .arrow {
+    transform: translateY(calc(-1 * var(--translation-value)));
+  }
+
+  .navigator.left:hover .arrow {
+    transform: rotate(-90deg) translateY(calc(-1 * var(--translation-value)));
+  }
+
+  [dir="rtl"] .navigator.left:hover .arrow {
+    transform: rotate(90deg) translateY(calc(-1 * var(--translation-value)));
+  }
+
+  .navigator.right:hover .arrow {
+    transform: rotate(90deg) translateY(calc(-1 * var(--translation-value)));
+  }
+
+  [dir="rtl"] .navigator.right:hover .arrow {
+    transform: rotate(-90deg) translateY(calc(-1 * var(--translation-value)));
+  }
+}

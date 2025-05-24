@@ -1,0 +1,21 @@
+.card{
+    border: 1px solid;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.image{
+    object-fit: contain;
+    width: 100%;
+}
+.link{
+    text-decoration: none;
+}
+.title{
+    text-align: center;
+    color: var( --color-portfolio-blue-1);
+}
+
+
+

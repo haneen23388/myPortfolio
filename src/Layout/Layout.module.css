@@ -1,0 +1,28 @@
+.menuSliderContainer {
+    transition: 0.8s ease-in-out;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    right: 0;
+    height: calc(100vh - var(--navbar-height));
+    z-index: 8;
+    /* opacity: 0; */
+  }
+  
+  .menuSliderContainer.showMenu {
+    top: var(--navbar-height);
+    /* opacity: 1; */
+  }
+  
+  .navBarContainer {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+  }
+  
+  .navBarContainer.showMenu {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+  
