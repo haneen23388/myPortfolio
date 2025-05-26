@@ -24,7 +24,7 @@ const content ={
  home:{
    bigTitle:["About me",'نبذه عني'],
    pargraph:['Hi, I am a Frontend Developer with over 3 years of experience crafting fast, responsive, and user-centric web applications.I specialize in bringing ideas to life through clean, maintainable code using technologies like React.js, WordPress, and Shopify.Driven by a passion for performance and user experience, I thrive on solving complex problems, optimizing front-end workflows, and building interfaces that are both elegant and effective',
-       'مرحبًا، أنا مطوّر واجهات أمامية (Frontend Developer) أمتلك أكثر من 3 سنوات من الخبرة في تطوير تطبيقات ويب سريعة، متجاوبة، ومحسّنة لتجربة المستخدم.أتخصص في تحويل الأفكار إلى كود نظيف وقابل للصيانة باستخدام تقنيات مثل React.js وWordPress وShopify.مدفوع بشغف للأداء وتجربة المستخدم، أستمتع بحل المشكلات المعقدة، وتحسين سير العمل في الواجهة الأمامية، وبناء واجهات أنيقة وفعّالة تُحدث فرقًا حقيقيًا.'
+       'مرحبًا، أنا مطوّرة واجهات أمامية (Frontend Developer) أمتلك أكثر من 3 سنوات من الخبرة في تطوير تطبيقات ويب سريعة، متجاوبة، ومحسّنة لتجربة المستخدم.أتخصص في تحويل الأفكار إلى كود نظيف وقابل للصيانة باستخدام تقنيات مثل React.js وWordPress وShopify، أستمتع بحل المشكلات المعقدة، وتحسين سير العمل في الواجهة الأمامية، وبناء واجهات أنيقة وفعّالة تُحدث فرقًا حقيقيًا.'
    ],
    buttom:["Contact Me","التواصل معي"],
    title:['My Project',"مشاريعي"],

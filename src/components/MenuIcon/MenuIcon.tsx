@@ -13,10 +13,10 @@ const MenuIcon = () => {
       onClick={handleMenuClick}
       className={[styles.wrapper, menuOpen ? styles.open : ""].join(" ")}
     >
-      <div className={styles.menu}>
+      {/* <div className={styles.menu}>
         <span></span>
         <span></span>
-      </div>
+      </div> */}
       <div className={[styles.label, "label-l"].join(" ")}>
         {getRightContent(
           rtlLanguage,

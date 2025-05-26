@@ -44,6 +44,12 @@ const ArrowNavigator = () => {
         });
       }
     }
+      if (mainPage === 4) {
+    if (direction === "left") {
+      return changePage({ mainPage: 3 });
+    }
+    // لا تفعل شيئًا إذا كانت الضغطة يمين
+  }
   };
 
   const handleGoToPrev = () => {

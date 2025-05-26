@@ -12,7 +12,7 @@ const Contact = () => {
     <div>
       <Title title={getRightContent(rtlLanguage, contect.contact.bigTitle)} />
       <div className="container horizontal-padding">
-        <div className="spacer-40 "></div>
+        <div className="spacer-64"></div>
         <div className={styles.contact}>
           <InView triggerOnce={false} threshold={0.3}>
             {({ inView, ref }) => (
@@ -28,9 +28,10 @@ const Contact = () => {
             )}
           </InView>
 
-          <div className="spacer-32"></div>
+          <div className="spacer-64"></div>
           <Scoial />
-          <div className="spacer-120"></div>
+          <div className="spacer-140"></div>
+          <div className="spacer-16"></div>  
         </div>
       </div>
     </div>
